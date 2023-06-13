@@ -1,8 +1,10 @@
+const colorBtn = document.querySelector("button");
 
+const changeColor = () => {
+  const getRandomHexColor = Math.floor(Math.random() * 0xffffff).toString(16);
 
+  document.body.style.background = `#${getRandomHexColor}`;
+  console.log("click on button, got color", getRandomHexColor);
+};
 
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
+colorBtn.addEventListener("click", changeColor);
