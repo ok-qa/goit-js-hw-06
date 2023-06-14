@@ -34,3 +34,12 @@ button {
 #validation-input.invalid {
   border-color: #f44336;
 }
+
+
+
+.galleryImg{
+  display: block;
+  max-width: 70%;
+  height: auto;
+  padding:  10px;
+};

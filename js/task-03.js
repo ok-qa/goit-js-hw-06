@@ -19,8 +19,10 @@ const galleryImage = images
     ({ url, alt }) =>
       `<li class = "galleryItem"><img class = "galleryImg" src = ${url} alt = ${alt}> </img></li>`
   )
-  .join();
+  .join("");
 
-galleryList.insertAdjacentHTML('afterbegin', galleryImage);
+galleryList.insertAdjacentHTML("afterbegin", galleryImage);
+
+document.getElementById("js-gallery").style.listStyle = "none";
 
 console.log(galleryList);
